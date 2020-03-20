@@ -1,0 +1,8 @@
+.left-side{
+    position: absolute; 
+    top: 100px;
+    left: 0;
+    width: 100px;
+    height: 100%; 
+    background: gold;
+    }

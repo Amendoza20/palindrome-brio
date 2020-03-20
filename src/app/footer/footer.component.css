@@ -2,8 +2,8 @@
     position: fixed;
     left: 0;
     bottom: 0;
+    height: 100px;
     width: 100%;
-    padding: 100px;
     text-align: center;
     background: #1abc9c;
     color: white;

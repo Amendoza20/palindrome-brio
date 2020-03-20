@@ -1,7 +1,6 @@
-.header {
-    height: 100px;
-    text-align: center;
-    background: #000000;
-    color: white;
-    font-size: 30px;
-  }
+.header{
+  top: 0;
+  height: 100px;
+  background: #000000;
+  
+}
