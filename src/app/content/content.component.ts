@@ -15,7 +15,10 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
   }
   palindromeCheck(): boolean {
-    return this.text != '';
+    let value = this.text.toLowerCase();
+    value = value.replace(/[^a-zA-Z]/g, '');
+    let reverse = value.split('').reverse().join('');
+    return value == reverse;
     
   }
   submit(){
