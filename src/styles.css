@@ -1,4 +1,9 @@
-*{text-align: center;}
+*{
+    text-align: center;
+    background-color: whitesmoke;
+    color: #293e44;
+}
+
 body{
     margin: 0;
 }

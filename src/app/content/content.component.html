@@ -47,9 +47,14 @@
         faucibus. Quisque eros turpis, pretium eu molestie a, fermentum at nibh. 
         Morbi vel consequat dolor.
     </div>
-    <form class="test">
-        <label for="test">Is this a palindrome?</label><br>
-        <input type="text" id="test" name="test" value="text"><br>
-         <input type="submit" value="Check">
-    </form>
+    
+    <div class="palindromeTest">
+    <label for="test">Is This A Palindrome?</label><br>
+    <input type="text" id="textbox" [value]="text" (input)="text = $event.target.value;">
+    <button class="button" (click)="submit()">Check</button>
+    </div>
+
+    <div>
+        {{response}}
+    </div>
 </div>

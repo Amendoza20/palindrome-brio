@@ -1,10 +1,10 @@
-.footer{
+.footer {
     left: 0;
     bottom: 0;
     height: 100px;
     width: 100%;
     text-align: center;
-    background: #000000;
-    color: white;
+    background: #293e44;
+    color: whitesmoke;
     font-size: 20px;
 }

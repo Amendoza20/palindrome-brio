@@ -1,15 +1,16 @@
 .header {
   top: 0;
   height: 100px;
-  background: #000000;
+  background: #293e44;
 }
 .button {
   float: right;
-  background-color: goldenrod;
-  color: burlywood;
+  background-color: whitesmoke;
+  color: rgb(33, 181, 240);
   padding: 15px 25 px;
   font-size: 20px;
   }
 .button:hover {
-  background-color: cyan;
+  background-color: rgb(33, 181, 240);
+  color: whitesmoke;
 }
