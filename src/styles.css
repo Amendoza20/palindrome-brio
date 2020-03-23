@@ -1,9 +1,46 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+}
+.app{
     text-align: center;
-    background-color: whitesmoke;
-    color: #293e44;
+    background-color: rgb(33, 181, 240);
+    color: whitesmoke;
 }
 
-body{
-    margin: 0;
+html, body{
+    height: 100%;
+}
+
+#container {
+    height: 1px;
+    min-height: 100%;
+}
+#main { 
+    overflow: auto;
+    height: 1px;
+    min-height: inherit;
+    margin-bottom: 100px;
+}
+#content {
+    background-color: whitesmoke;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100%;
+}
+
+#footer {
+    position: relative;
+    background-color: #293e44; 
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+    
+}
+.button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+    width: 80px;
+    border-radius: 5px;
+    height: 30px;
 }
