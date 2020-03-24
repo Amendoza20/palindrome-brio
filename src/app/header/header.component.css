@@ -11,6 +11,7 @@
   color: whitesmoke;
 
 }
+
 .button {
   margin: 30px 20px;
   float: right;
@@ -18,7 +19,8 @@
   color: rgb(33, 181, 240);
   padding: 15px 25 px;
   font-size: 20px;
-  }
+}
+
 .button:hover {
   background-color: rgb(33, 181, 240);
   color: whitesmoke;

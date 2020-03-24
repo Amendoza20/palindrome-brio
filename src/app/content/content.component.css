@@ -1,8 +1,10 @@
 .content {
     margin: auto;
     padding: 10px;
-    text-align: center;
+    text-align: justify;
     width: 50%;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
     }
 
 .border {
@@ -13,22 +15,29 @@
     color: #293e44;
     overflow: auto;
 }
+#palindrome {
+    text-align: center;
+    font-style: italic;
+}
 
 .palindromeTest {
     font-size: 50px;
 }
+
 #textbox {
     width: 60%;
     height: 25px;
     background-color: white;
     font-family: 'Courier New', Courier, monospace;
 }
+
 .button {
     border: 0;
     background-color: rgb(33, 181, 240);
     color: whitesmoke;
     font-weight: bold;
 }
+
 .button:hover {
     background-color: white;
     color: rgb(33, 181, 240)

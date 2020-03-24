@@ -1,65 +1,42 @@
 <div class="border">
-    <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat 
-        dignissim facilisis. Ut bibendum enim a auctor pharetra. Fusce iaculis 
-        eleifend dignissim. Vestibulum bibendum suscipit sapien. Cras porttitor 
-        enim ut interdum tristique. Nunc mi eros, finibus nec odio non, pharetra 
-        feugiat sapien. Vestibulum scelerisque sapien eget faucibus condimentum. 
-        Fusce placerat venenatis metus, quis ornare sapien auctor non. Phasellus 
-        vel accumsan risus. Pellentesque ut vehicula sem. Fusce porta nisl id 
-        varius facilisis. Pellentesque pellentesque turpis et convallis elementum. 
-        Aliquam volutpat tristique orci. Sed at metus efficitur, ultrices mi ut, 
-        vulputate quam. Proin congue, velit vitae ultricies venenatis, lacus 
-        sapien aliquam sapien, ac placerat tellus mauris ut libero. Suspendisse 
-        tempus dolor mi, ut mollis sapien eleifend nec. Integer commodo pretium 
-        faucibus. Quisque eros turpis, pretium eu molestie a, fermentum at nibh. 
-        Morbi vel consequat dolor.
+       <div class="content">
+        Sore was I ere I saw Eros.|
+    A man, a plan, a canal -- Panama|
+    Never a foot too far, even.|
+    Euston saw I was not Sue.|
+    Live on evasions? No, I save no evil.|
+    Red Roses run no risk, sir, on nurses order.|
+    Salisbury moor, sir, is roomy. Rub Silas.|
+    Marge, let's "went." I await news telegram.|
+    A new order began, a more Roman age bred Rowena.|
+    I, man, am regal; a German am I.|
+    Tracy, no panic in a pony-cart.|
+    Egad! Loretta has Adams as mad as a hatter. Old age!|
+    Eve, mad Adam, Eve!|
+    Resume so pacific a pose, muser.|
+    Marge let a moody baby doom a telegram.|
+    Tenet C is a basis, a basic tenet.|
+    Nella's simple hymn: "I attain my help, Miss Allen."|
+    Straw? No, too stupid a fad. I put soot on warts.|
+    Sir, I demand, I am a maid named Iris.|
+    Lay a wallaby baby ball away, Al.|
+    Tessa's in Italy, Latin is asset.|
+    Noel sees Leon.|
+        </div>
+    <div class="content" id="palindrome">
+        A palindrome is a word or sentence that is the same forward and backword.
+        <br>
+        This is a way to check if your text is a palindrome!
+        <br>
+        Go ahead and put in any text to see. 
+        <br>
+        Do geese see God? 
     </div>
-    <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat 
-        dignissim facilisis. Ut bibendum enim a auctor pharetra. Fusce iaculis 
-        eleifend dignissim. Vestibulum bibendum suscipit sapien. Cras porttitor 
-        enim ut interdum tristique. Nunc mi eros, finibus nec odio non, pharetra 
-        feugiat sapien. Vestibulum scelerisque sapien eget faucibus condimentum. 
-        Fusce placerat venenatis metus, quis ornare sapien auctor non. Phasellus 
-        vel accumsan risus. Pellentesque ut vehicula sem. Fusce porta nisl id 
-        varius facilisis. Pellentesque pellentesque turpis et convallis elementum. 
-        Aliquam volutpat tristique orci. Sed at metus efficitur, ultrices mi ut, 
-        vulputate quam. Proin congue, velit vitae ultricies venenatis, lacus 
-        sapien aliquam sapien, ac placerat tellus mauris ut libero. Suspendisse 
-        tempus dolor mi, ut mollis sapien eleifend nec. Integer commodo pretium 
-        faucibus. Quisque eros turpis, pretium eu molestie a, fermentum at nibh. 
-        Morbi vel consequat dolor.
-    </div>
-    <div class="content">
-    Sore was I ere I saw Eros.
-A man, a plan, a canal -- Panama
-Never a foot too far, even.
-Euston saw I was not Sue.
-Live on evasions? No, I save no evil.
-Red Roses run no risk, sir, on nurses order.
-Salisbury moor, sir, is roomy. Rub Silas.
-Marge, let's "went." I await news telegram.
-A new order began, a more Roman age bred Rowena.
-I, man, am regal; a German am I.
-Tracy, no panic in a pony-cart.
-Egad! Loretta has Adams as mad as a hatter. Old age!
-Eve, mad Adam, Eve!
-Resume so pacific a pose, muser.
-Marge let a moody baby doom a telegram.
-Tenet C is a basis, a basic tenet.
-Nella's simple hymn: "I attain my help, Miss Allen."
-Straw? No, too stupid a fad. I put soot on warts.
-Sir, I demand, I am a maid named Iris.
-Lay a wallaby baby ball away, Al.
-Tessa's in Italy, Latin is asset.
-Noel sees Leon.
-    </div>
-    
+        
     <div class="palindromeTest">
-    <label for="test">Is This A Palindrome?</label><br>
-    <input type="text" id="textbox" [value]="text" (input)="text = $event.target.value;">
-    <button class="button" (click)="submit()">Check</button>
+        <label for="test">Is This A <br>Palindrome?</label><br>
+        <input type="text" id="textbox" [value]="text" (input)="text = $event.target.value;">
+        <button class="button" (click)="submit()">Check</button>
     </div>
 
     <div>
