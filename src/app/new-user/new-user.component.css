@@ -1,0 +1,15 @@
+.login-page {
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+    width: 50%;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    }
+
+#formbox {
+    width: 45%;
+    height: 25px;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
