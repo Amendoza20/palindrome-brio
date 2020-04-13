@@ -2,12 +2,12 @@
         
     <div class="card">
         <h1>Current User Login</h1>
-        <form class="current-user">
+        <form class="current-user" formGroup="loginForm" (ngSubmit)="onSubmit()">
             <label for="username">Username: </label>
-            <input type="text" id="formbox">
+            <input type="text" id="username" formControlName="username" required="" autofocus="">
             <br>
             <label for="password">Password: </label>
-            <input type="password" id="formbox">
+            <input type="password" id="password" formControlName="password" required="" autofocus="">
             <br>
             <button class="button" type="submit">Login</button>
         </form>
