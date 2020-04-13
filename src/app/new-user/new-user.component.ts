@@ -13,6 +13,7 @@ export class NewUserComponent implements OnInit {
   user: User;
 
   constructor(private formBuilder: FormBuilder, private router: Router){
+  
     this.user = new User;
 
     this.newUserForm = this.formBuilder.group(
@@ -26,6 +27,9 @@ export class NewUserComponent implements OnInit {
         reEnterPassword:'',
        }
     );
+
+    
+
    }
   
 
