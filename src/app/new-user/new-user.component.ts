@@ -22,9 +22,9 @@ export class NewUserComponent implements OnInit {
         lastName:['', Validators.required],
         username:['', Validators.required],
         email:['', Validators.required, Validators.email],
-        reEnterEmail:['', Validators.required],
+        ConfirmEmail:['', Validators.required],
         password:['', Validators.required, Validators.minLength, Validators.maxLength],
-        reEnterPassword:['', Validators.required]
+        ConfirmPassword:['', Validators.required]
        }
     );
     }
@@ -34,14 +34,14 @@ export class NewUserComponent implements OnInit {
   
   passwordValidation(){
     const { value: password } = this.newUserForm.get('password');
-    const { value: reEnterPassword } = this.newUserForm.get('reEnterPassword');
-    return password === reEnterPassword ? null : { passwordNotMatch: true};
+    const { value: ConfirmPassword } = this.newUserForm.get('ConfirmrPassword');
+    return password === ConfirmPassword ? null : { passwordNotMatch: true};
   } 
 
   emailValidation(){
     const { value : email } = this.newUserForm.get('email');
-    const { value: reEnterEmail } = this.newUserForm.get('reEnterEmail');
-    return email === reEnterEmail ? null: { emailNotMathc: true };
+    const { value: ConfirmEmail } = this.newUserForm.get('ConfirmEmail');
+    return email === ConfirmEmail ? null: { emailNotMathc: true };
   }
 
   onSubmit(){
