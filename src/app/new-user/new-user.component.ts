@@ -51,7 +51,9 @@ export class NewUserComponent implements OnInit {
     this.user.username = this.newUserForm.get('username').value;
     this.user.email = this.newUserForm.get('email').value;
     this.user.password = this.newUserForm. get('password').value;
-    //do the thing 
+    //still need to store data
+    console.log("User info added");
     }
+    console.log("something wasn't right");
   }
 }

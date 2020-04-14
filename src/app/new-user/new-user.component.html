@@ -1,4 +1,4 @@
-<div class="login-page">   
+<div class="newUserPage">   
 
     <div class="card">   
          <form class="new-user" formGroup="newUserForm" (ngSubmit)="onSubmit()">
@@ -9,23 +9,23 @@
              </div>
              <br>
              <label for="lname">Last Name: </label>
-             <input type="text" id="lastName" formControlName="lastName" placeholder="Enter last name..." required="" autofocus="">
+             <input type="text" id="lastName" formControlName="lastName" placeholder="Enter last name..." required="">
              <br>
              <label for="username">Username: </label>
-             <input type="text" id="username" formControlName="username" required="" autofocus=">
+             <input type="text" id="username" formControlName="username" required="">
              <br>
              <label for="email">Email Address: </label>
-             <input type="text" id="email" formControlName="Email" required="" autofocus="">
+             <input type="text" id="email" formControlName="Email" required="">
              <br>
              <label for="email">Re-enter Email: </label>
-             <input type="text" id="ConfirmEmail" formControlName="ConfirmEmail" required="" autofocus="">
+             <input type="text" id="ConfirmEmail" formControlName="ConfirmEmail" required="">
              <br>
              <label for="newpassword">Enter Password: </label>
-             <input type="password" id="password" formControlName="password" required="" autofocus="">
+             <input type="password" id="password" formControlName="password" required="">
              <br>
              <label for="newpassword">Re-enter Password: </label>
-             <input type="password" id="ConfirmPassword" formControlName="ConfirmPassword" required="" autofocus="">
-             <br>
+             <input type="password" id="ConfirmPassword" formControlName="ConfirmPassword" required="">
+              <br>
              <button class="button" type="submit">Submit!</button>
             
          </form>

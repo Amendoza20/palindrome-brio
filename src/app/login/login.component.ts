@@ -9,6 +9,7 @@ import { Login } from '../models/login';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+ 
   loginForm: FormGroup;
   login: Login;
 
