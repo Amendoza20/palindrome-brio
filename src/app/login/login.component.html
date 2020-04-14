@@ -2,7 +2,7 @@
         
     <div class="card">
         <h1>Current User Login</h1>
-        <form class="current-user" formGroup="loginForm" (ngSubmit)="onSubmit()">
+        <form class="current-user" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <label for="username">Username: </label>
             <input type="text" id="username" formControlName="username" required="" autofocus="">
             <br>

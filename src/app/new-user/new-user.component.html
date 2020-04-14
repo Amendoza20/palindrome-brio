@@ -1,7 +1,7 @@
 <div class="login-page">   
 
     <div class="card">   
-         <form class="new-user" formGroup="newUserForm" (ngSubmit)="onSubmit()">
+         <form class="new-user" [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
              <div class="form-group">
              <h1>Create New User</h1>
              <label for="fname">First Name: </label>
