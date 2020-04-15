@@ -1,34 +1,31 @@
 <div class="login-page">   
 
     <div class="card">   
-         <form class="new-user" [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
-             <div class="form-group">
+        <form class="new-user" [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
              <h1>Create New User</h1>
              <label for="fname">First Name: </label>
              <input type="text" id="firstName" formControlName="firstName" placeholder="Enter first name..." required="" autofocus="">
-             </div>
              <br>
              <label for="lname">Last Name: </label>
-             <input type="text" id="lastName" formControlName="lastName" placeholder="Enter last name..." required="" autofocus="">
+             <input type="text" id="lastName" formControlName="lastName" placeholder="Enter last name..." required="" >
              <br>
              <label for="username">Username: </label>
-             <input type="text" id="username" formControlName="username" required="" autofocus="">
+             <input type="text" id="username" formControlName="username" required="" >
              <br>
              <label for="email">Email Address: </label>
-             <input type="text" id="email" formControlName="email" required="" autofocus="">
+             <input type="text" id="email" formControlName="email" required="" >
              <br>
              <label for="email">Re-enter Email: </label>
-             <input type="text" id="ConfirmEmail" formControlName="confirmEmail" required="" autofocus="">
+             <input type="text" id="ConfirmEmail" formControlName="confirmEmail" required="">
              <br>
              <label for="newpassword">Enter Password: </label>
-             <input type="password" id="password" formControlName="password" required="" autofocus="">
+             <input type="password" id="password" formControlName="password" required="">
              <br>
              <label for="newpassword">Confirm Password: </label>
-             <input type="password" id="ConfirmPassword" formControlName="confirmPassword" required="" autofocus="">
+             <input type="password" id="ConfirmPassword" formControlName="confirmPassword" required="">
              <br>
              <button class="button" type="submit">Submit!</button>
-            
-         </form>
+        </form>
     </div> 
 
  </div>
