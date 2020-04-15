@@ -13,7 +13,12 @@ export class NewUserComponent implements OnInit {
   newUserForm: FormGroup;
   user: User;
   
-  constructor(private service: UserService, private formBuilder: FormBuilder, private router: Router){
+  constructor(
+    private service: UserService, 
+    private formBuilder: FormBuilder, 
+    private router: Router
+    
+    ){
   
     this.user = new User;
 

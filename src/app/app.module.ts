@@ -10,6 +10,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxWebstorageModule } from 'ngx-webstorage';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxWebstorageModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
