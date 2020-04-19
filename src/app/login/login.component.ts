@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Login } from '../models/login';
-import { UserService } from '../services/user.service';
+import { AuthorizationService } from '../services/authorization.service';
 
 @Component({
   selector: 'app-login',
@@ -14,8 +14,8 @@ export class LoginComponent implements OnInit {
   login: Login;
 
   constructor(
-    private service: UserService, 
     private formBuilder: FormBuilder, 
+    private authService: AuthorizationService,
     private router: Router
     
     ){
@@ -36,8 +36,8 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     this.login.username = this.loginForm.get('username').value;
     this.login.password = this.loginForm.get('password').value;
-    
-    this.service.login(this.login).subscribe(data => {
+    console.log("login submitted")
+    this.authService.login(this.login).subscribe(data => {
       if (data) {
         console.log("login passed");
       }else { console.log("login failed");
