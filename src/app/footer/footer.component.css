@@ -1,12 +1,16 @@
 .footer {
+    margin-left: -12.5%;
+    margin-right: -12.5%;
+    padding-top: 25px;
     position: relative;
     bottom: 0;
     box-sizing: border-box;
     height: 100px;
-    width: 100%;
+    width: 112.5%;
     background: #293e44;
     color: whitesmoke;
-    }
+    align-items: flex-end;    
+}
 
 .content {
     float: left;

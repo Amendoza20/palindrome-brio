@@ -36,10 +36,12 @@
     <div class="palindromeTest">
         <label for="test">Is This A <br>Palindrome?</label><br>
         <input type="text" id="textbox" [value]="text" (input)="text = $event.target.value;">
+        <br>
         <button class="button" (click)="submit()">Check</button>
     </div>
 
-    <div>
+    <div class="response">
+        <br>
         {{response}}
     </div>
 </div>
