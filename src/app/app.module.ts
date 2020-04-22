@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxWebstorageModule } from 'ngx-webstorage';
-import { BackgroundComponent } from './background/background.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { BackgroundComponent } from './background/background.component';
     FooterComponent,
     NewUserComponent,
     LoginComponent,
-    BackgroundComponent
+
   ],
   imports: [
     BrowserModule,

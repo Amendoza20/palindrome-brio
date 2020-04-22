@@ -13,6 +13,10 @@
   color: whitesmoke;
 
 }
+.title:hover{
+  color: rgb(33, 181, 240);
+  cursor: pointer;
+}
 
 .button {
   margin: 30px 20px;
