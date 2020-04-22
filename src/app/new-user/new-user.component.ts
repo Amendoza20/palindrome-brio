@@ -18,7 +18,8 @@ export class NewUserComponent implements OnInit {
     private formBuilder: FormBuilder, 
     private router: Router
     
-    ){
+    )
+    {
   
     this.user = new User;
 

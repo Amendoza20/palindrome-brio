@@ -42,21 +42,21 @@ export class UserService {
     return this.http.get(this.url + '/newuser/' + username);
   }
 
-  login(login: Login): Observable<boolean> {
-    return this.http.post<JwtAuthResponse>('/login', login).pipe( map (data => {
-      this.storageService.store('authenticationToken', data.authenticationToken);
-      this.storageService.store('username', data.username);
-      return true;
-    }));
+  // login(login: Login): Observable<boolean> {
+  //   return this.http.post<JwtAuthResponse>('/login', login).pipe( map (data => {
+  //     this.storageService.store('authenticationToken', data.authenticationToken);
+  //     this.storageService.store('username', data.username);
+  //     return true;
+  //   }));
   
-  }
+  // }
 
-  logout(){
-    this.storageService.clear('authenticationToken');
-    this.storageService.clear('username');
-  }
+  // logout() {
+  //   this.storageService.clear('authenticationToken');
+  //   this.storageService.clear('username');
+  // }
 
-  authenticaited(){
-    return this.storageService.retrieve('username') != null;
-  }
+  // authenticaited() {
+  //   return this.storageService.retrieve('username') != null;
+  // }
 }

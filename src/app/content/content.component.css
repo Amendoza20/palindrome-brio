@@ -1,20 +1,29 @@
-.content {
-    margin: auto;
-    padding: 10px;
-    text-align: justify;
-    width: 50%;
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+@media screen and (max-width: 600px) {
+    .border {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
     }
-
+}
 .border {
-    margin-left: 100px;
-    margin-right: 100px;
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
     padding: 20px;
     background-color: whitesmoke;
     color: #293e44;
     overflow: auto;
 }
+
+.content {
+    margin: auto;
+    padding: 10px;
+        text-align: justify;
+    width: 70%;
+    height: 15%;
+     }
+
 #palindrome {
     text-align: center;
     font-style: italic;
